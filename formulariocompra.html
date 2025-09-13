@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Compra</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Encabezado -->
+  <header>
+    <div class="logo-empresa">
+      <img src="/IMAGENES/logo-empresa.png" alt="Logo JJ Service Computer" width="80" height="80">
+      <h2>JJ SERVICE COMPUTER</h2>
+    </div>
+
+    <form class="busqueda">
+      <input type="text" placeholder="Buscar...">
+      <button type="submit">🔍</button>
+    </form>
+
+    <nav>
+      <ul>
+        <li><a href="INDEX.HTML">INICIO</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#contacto-empresa">CONTACTO</a></li>
+        <li><a href="#direccion-empresarial">DIRECCIONES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="titulo-portafolio">Formulario de Compra</h1>
+
+  <section id="formulario-compra">
+    <form id="form-compra">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="metodo">Método de pago:</label>
+      <select id="metodo" name="metodo" required>
+        <option value="">Seleccione...</option>
+        <option value="credito">Tarjeta de crédito</option>
+        <option value="debito">Tarjeta de débito</option>
+      </select>
+
+      <label for="numero">Número de tarjeta:</label>
+      <input type="text" id="numero" name="numero" maxlength="16" required>
+
+      <label for="fecha">Fecha de vencimiento:</label>
+      <input type="month" id="fecha" name="fecha" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="password" id="cvv" name="cvv" maxlength="3" required>
+
+      <button type="submit" class="boton-producto">Comprar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pie-de-pagina-portafolio">
+    <div class="container-pie-de-pagina">
+      <div class="row my-4">
+        <div class="logo-empresa-footer">
+          <img src="IMAGENES/logo-empresa.png" alt="Logo empresa">
+        </div>
+        <div class="redes-empresa">
+          <h5 class="redes-sociales">Redes sociales</h5>
+          <ul class="oficial-redes">
+            <li><img src="PORTAFOLIO/fc.png" alt="Facebook" width="40" height="40">@servicecomputer</li>
+            <li><img src="PORTAFOLIO/it.png" alt="Instagram" width="40" height="40">@jjservicecomputer</li>
+          </ul>
+        </div>
+        <div class="direcciones-empresa" id="direccion-empresarial">
+          <h5>Direcciones</h5>
+          <ul class="direcciones-ciudades">
+            <li>
+              <p>Cll 20 #40-30 La Pastora, Cúcuta, Norte de Santander</p>
+            </li>
+            <li>
+              <p>Carrera 30 #15-90 Girón, Bucaramanga, Santander</p>
+            </li>
+            <li>
+              <p>Carrera 140 #130-90 Localidad Kennedy, Bogotá</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contacto-empresa" id="contacto-empresa">
+          <h5>Contacto</h5>
+          <ul class="contacto-ciudades">
+            <li>
+              <p>318272722 - La Pastora, Cúcuta, Norte de Santander</p>
+            </li>
+            <li>
+              <p>34929238 - Girón, Bucaramanga, Santander</p>
+            </li>
+            <li>
+              <p>381827883 - Localidad Kennedy, Bogotá</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+
+</body>
+</html>

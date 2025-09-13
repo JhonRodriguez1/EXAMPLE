@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JJ SERVICE COMPUTER</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-empresa">
+      <img src="IMAGENES/logo-empresa.png" alt="Logo de la empresa" width="100" height="100">
+      <h2>JJ SERVICE COMPUTER</h2>
+    </div>
+    <form class="busqueda">
+      <input type="text" placeholder="Buscar...">
+      <button type="submit">🔍</button>
+    </form>
+    <nav>
+      <ul>
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#formulario-contacto">CONTACTO</a></li>
+        <li><a href="#direccion-empresarial">DIRECCIONES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- GALERÍA -->
+  <section id="galeria">
+    <div class="carousel">
+      <img src="src/img/imagen0001.jpg" alt="Imagen 1" />
+      <img src="src/img/imagen0002.jpg" alt="Imagen 2" />
+      <img src="src/img/imagen0003.jpg" alt="Imagen 3" />
+      <img src="src/img/imagen0004.jpg" alt="Imagen 4" />
+      <img src="src/img/imagen0005.webp" alt="Imagen 5" />
+      <div class="carousel-buttons">
+        <button id="anterior" class="carousel-button">←</button>
+        <button id="siguiente" class="carousel-button">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN INICIO -->
+  <section id="inicio">
+    <div class="contenedor">
+      <div class="item-contenedor">
+        <p><strong>¿QUIÉNES SOMOS?</strong> Nuestra filosofía se basa en la confianza, la calidad y el
+          servicio cercano. Creemos en soluciones reales, presupuestos transparentes sin sorpresas y un trato honesto.
+          Cada cliente que confía en nosotros se convierte en lo más importante: la razón de ser de nuestro constante
+          compromiso con la excelencia y la innovación.</p>
+      </div>
+      <div class="item-contenedor">
+        <img id="imagencentral" src="IMAGENES/fondo-principal.jpg" alt="Imagen principal">
+        <p class="abajo"><strong>NUESTRA VISIÓN</strong> Ser referentes en el sector tecnológico local, reconocidos por
+          nuestra confiabilidad, expertise técnico y por construir relaciones a largo plazo con nuestros clientes.</p>
+      </div>
+      <div class="item-contenedor">
+        <img id="imagenmision" src="IMAGENES/fondo-cabecera.webp" alt="Imagen misión">
+        <p class="derecha"><strong>NUESTRA MISIÓN</strong> Proporcionar soluciones tecnológicas integrales, de alta
+          calidad y accesibles, respaldadas por un servicio al cliente excepcional y honesto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios">
+    <h1 class="titulo-portafolio">PORTAFOLIO</h1>
+    <div class="contenedor2">
+      <div class="project-contenedor">
+        <div class="project-img-info">
+          <img src="IMAGENES/PC-VENTAS.avif" alt="Venta de PCs">
+          <div class="project-info">
+            <p>Te ofrecemos una variedad de equipos gamers y más.</p>
+            <a href="portafolio2.html" target="_blank" class="boton-producto">VER PRODUCTOS</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-contenedor">
+        <div class="project-img-info">
+          <img src="IMAGENES/fondo-cabecera.webp" alt="Servicios web">
+          <div class="project-info">
+            <p>Ofrecemos creación de páginas web, mantenimiento de software y hardware.</p>
+            <a href="#" target="_blank" class="boton-producto">VER PRODUCTO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <h1 class="titulo-portafolio">Formulario de Contacto</h1>
+  <section id="formulario-contacto">
+    <form action="/submit" method="post">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pie-de-pagina-portafolio">
+    <div class="container-pie-de-pagina">
+      <div class="row my-4">
+        <div class="logo-empresa-footer">
+          <img src="IMAGENES/logo-empresa.png" alt="Logo empresa">
+        </div>
+        <div class="redes-empresa">
+          <h5 class="redes-sociales">Redes sociales</h5>
+          <ul class="oficial-redes">
+            <li><img src="PORTAFOLIO/fc.png" alt="Facebook" width="40" height="40">@servicecomputer</li>
+            <li><img src="PORTAFOLIO/it.png" alt="Instagram" width="40" height="40">@jjservicecomputer</li>
+          </ul>
+        </div>
+        <div class="direcciones-empresa" id="direccion-empresarial">
+          <h5>Direcciones</h5>
+          <ul class="direcciones-ciudades">
+            <li>
+              <p>Cll 20 #40-30 La Pastora, Cúcuta, Norte de Santander</p>
+            </li>
+            <li>
+              <p>Carrera 30 #15-90 Girón, Bucaramanga, Santander</p>
+            </li>
+            <li>
+              <p>Carrera 140 #130-90 Localidad Kennedy, Bogotá</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contacto-empresa">
+          <h5>Contacto</h5>
+          <ul class="contacto-ciudades">
+            <li>
+              <p>318272722 - La Pastora, Cúcuta, Norte de Santander</p>
+            </li>
+            <li>
+              <p>34929238 - Girón, Bucaramanga, Santander</p>
+            </li>
+            <li>
+              <p>381827883 - Localidad Kennedy, Bogotá</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+
+</html>
